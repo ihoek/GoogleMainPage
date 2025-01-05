@@ -71,6 +71,7 @@
   display: flex;
 }
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100px;
@@ -82,6 +83,9 @@
 .card:hover {
   background-color: #e8e8e9;
   border-radius: 10px;
+}
+.card:hover .more_vert_img {
+  display: block;
 }
 
 .card_circle {
@@ -117,7 +121,15 @@
 .inputimgstyle {
   padding-left: 20px;
 }
-
+.more_vert_img {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
 /* Dropdown container */
 .dropdown {
   position: relative;
@@ -125,7 +137,6 @@
 
 .dropdown-menu {
   display: none;
-  display: grid;
   position: absolute;
   top: 60px;
   right: 10px;
@@ -139,8 +150,5 @@
 .dropdown-item {
   padding: 8px 12px;
   cursor: pointer;
-}
-
-.dropdown-item:hover {
-  background-color: #f0f0f0;
+  font-size: 12px;
 }
