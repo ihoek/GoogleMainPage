@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./CSS/index.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoogleMainPage</title>
+  </head>
+  <script src="./Javascript/index.js"></script>
+
+  <body>
+    <div class="box">
+      <div class="container">
+        <!-- Header -->
+        <div class="header">
+          <div class="headerstyle header_font">Gmail</div>
+          <div class="headerstyle header_font">이미지</div>
+          <div class="headerstyle imagestyle">
+            <img class="imgsty" src="./img/science.png" alt="flask" />
+          </div>
+          <div class="headerstyle imagestyle">
+            <img
+              class="imgsty"
+              src="./img/apps.png"
+              alt="app"
+              onclick="toggleDropdown()"
+            />
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu" id="appsDropdown">
+              <!-- <div class="dropdown-item">App 1</div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+          <div class="googlelogoimg">
+            <img class="imgsty" src="./img/googlelogo.png" alt="logo" />
+          </div>
+          <!-- input창 -->
+          <div class="inputsetStyle">
+            <div class="inputmargin imagestyle">
+              <img class="imgsty" src="./img/search.png" alt="search" />
+            </div>
+            <div>
+              <input
+                class="inputstyle"
+                type="text"
+                placeholder="Google 검색 또는 URL 입력"
+              />
+            </div>
+            <div class="imagestyle inputimgstyle" onclick="ready_mic()">
+              <img class="imgsty" src="./img/mic.png" alt="mic" />
+            </div>
+            <div class="imagestyle inputimgstyle" onclick="ready_camera()">
+              <img class="imgsty" src="./img/photo_camera.png" alt="camera" />
+            </div>
+          </div>
+          <!-- card -->
+          <div class="cards">
+            <!-- 웹 스토어 -->
+            <div class="card" id="webstore" onclick="movePage('webstore')">
+              <div class="card_circle">
+                <div class="card_img_position">
+                  <img
+                    class="card_img imgsty"
+                    src="./img/chrome.png"
+                    alt="chrome"
+                  />
+                </div>
+              </div>
+              <div class="card_bot card_font">웹 스토어</div>
+            </div>
+
+            <!-- 유튜브 -->
+            <div class="card" id="youtube" onclick="movePage('youtube')">
+              <div class="card_circle">
+                <div class="card_img_position">
+                  <img
+                    class="card_img imgsty"
+                    src="./img/youtube.png"
+                    alt="youtube"
+                  />
+                </div>
+              </div>
+              <div class="card_bot card_font">Youtube</div>
+            </div>
+
+            <!-- 네이버 -->
+            <div class="card" id="naver" onclick="movePage('naver')">
+              <div class="card_circle">
+                <div class="card_img_position">
+                  <img
+                    class="card_img imgsty"
+                    src="./img/naver.jpeg"
+                    alt="naver"
+                  />
+                </div>
+              </div>
+              <div class="card_bot card_font">Naver</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer footerStyle">
+          <div class="imagestyle">
+            <img class="imgsty" src="./img/pen.png" alt="pen" />
+          </div>
+          <div class="header_font">Chrome 맞춤설정</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
