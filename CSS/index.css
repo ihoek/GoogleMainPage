@@ -21,9 +21,9 @@
   display: flex;
   height: 5%;
 }
-.imagestyle {
-  width: 25px;
-  height: 25px;
+.input_image_style {
+  width: 30px;
+  height: 30px;
 }
 .imgsty {
   width: 100%;
@@ -52,8 +52,8 @@
   font-size: 16px;
   outline: none;
 }
-.inputmargin {
-  padding: 0px 20px;
+.input_margin {
+  padding: 0px 10px;
 }
 .footerStyle {
   position: absolute;
