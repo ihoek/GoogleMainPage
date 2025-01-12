@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoogleMainPage</title>
   </head>
-  <script src="./Javascript/index.js"></script>
 
   <body>
     <div class="box">
@@ -20,14 +19,17 @@
             <img class="imgsty" src="./img/science.png" alt="flask" />
           </div>
           <div class="headerstyle imagestyle">
-            <img
-              class="imgsty"
-              src="./img/apps.png"
-              alt="app"
-              onclick="toggleDropdown()"
-            />
-            <!-- Dropdown menu -->
-            <div class="dropdown-menu" id="appsDropdown"></div>
+            <div>
+              <img
+                class="dropdown imgsty"
+                src="./img/apps.png"
+                alt="app"
+                id="dropdown"
+              />
+
+              <!-- Dropdown menu -->
+              <div class="dropdown_menu" id="appsDropdown"></div>
+            </div>
           </div>
         </div>
 
@@ -129,5 +131,5 @@
       </div>
     </div>
   </body>
-  <script></script>
+  <script src="./Javascript/index.js"></script>
 </html>
